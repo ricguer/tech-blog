@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { Post, User } = require("../models");
 
-// GET all posts for homepage
 router.get("/", async (req, res) => {
     try {
         const dbPostData = await Post.findAll({
@@ -15,9 +14,8 @@ router.get("/", async (req, res) => {
 
         const posts = dbPostData.map((post) => post.get({ plain: true }));
 
-        res.render("homepage", {
-            posts,
-            loggedIn: req.session.loggedIn,
+        res.render("home", {
+            posts
         });
     } 
     catch (err) {
