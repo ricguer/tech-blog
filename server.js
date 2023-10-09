@@ -33,8 +33,12 @@ app.use(routes);                                                /* Use the route
 
 
                                                                 /* ================== APP LISTENER ==================== */
-sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => {
-        console.log(`App listening on port ${PORT}!`);
-    });
-});
+// sequelize.sync({ force: false }).then(() => {
+//     app.listen(PORT, () => {
+//         console.log(`App listening on port ${PORT}!`);
+//     });
+// });
+
+app.listen(PORT, () => {
+    console.log("App listening");
+})

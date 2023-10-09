@@ -2,7 +2,8 @@
     {{#each posts}}
         <div class="post">
             <h2>{{title}}</h2>
-            <p>{{body}}</p>
+            <p>{{post_content}}</p>
+            <p>Date Created: {{createdAt}}</p>
         </div>
     {{/each}}
 {{else}}
