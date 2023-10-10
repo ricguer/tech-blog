@@ -16,13 +16,9 @@ No installation required other than the usual clone and installation of NPM pack
 Posts can be viewed and added. Users can sign in and view posts they have contributed.
 ## License
 MIT
-## Contributing
-
-## Tests
-
 ## Questions
 Any questions regarding this utility can be directed to: 
     
-- Author:  (https://github.com/)
+- Author:  (https://github.com/ricguer)
     
 - Email: 
